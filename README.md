@@ -1,5 +1,6 @@
 # math-pad
-Knows a mathematics algorithm? Implement it with Java.
+
+Knew a mathematics algorithm? Implement it with Java.
 
 MathPad is a simple and capable mathematics algorithm implementation system.
 As a gui application, it integrates basic to intermediate level mathematics algorithms.
