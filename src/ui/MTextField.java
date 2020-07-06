@@ -87,7 +87,7 @@ public class MTextField extends JTextField{
     }
 
     public static boolean hasText(String t){
-        return !(t == null || t.isBlank());
+        return !(t == null || t.length() == 0);
     }
 
     public void setText(int t) {

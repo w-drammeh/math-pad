@@ -107,7 +107,9 @@ public class FactorsGenerator extends JDialog {
     }
 
     public static List<Integer> primeFactorsOf(int n){
-        Arithmetic.assertPositivity(n, "Prime factorization on a non-natural integer "+n);
+        if (n <= 0) {
+            throw new IllegalArgumentException("Prime factorization on a non-natural integer "+n);
+        }
         final java.util.List<Integer> primeFactors = new ArrayList<>();
         if (PrimeTester.isPrime(n)) {
             primeFactors.add(n);
