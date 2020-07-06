@@ -1,6 +1,6 @@
-package test;
+package run;
 
-public class SpecificTester {
+public class Tester {
 
 
     public static void main(String[] args) {

@@ -1,10 +1,10 @@
 package math.arithmetic;
 
+import run.MathPad;
 import ui.MPanel;
 import ui.MTextField;
 import ui.MTextPane;
-import ui.MathPad;
-import waks.Constants;
+import utg.Constants;
 
 import javax.swing.*;
 import java.awt.*;

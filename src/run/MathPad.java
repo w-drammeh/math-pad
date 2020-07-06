@@ -1,10 +1,13 @@
-package ui;
+package run;
 
 import math.algebra.QuadraticEquation;
 import math.arithmetic.*;
 import math.finance.CompoundInterest;
 import math.finance.SimpleInterest;
 import math.others.LeapYearTester;
+import ui.About;
+import ui.FontFactory;
+import ui.MPanel;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

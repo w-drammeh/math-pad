@@ -1,36 +1,28 @@
-package waks;
+package utg;
 
 import math.arithmetic.GCDComputer;
 import math.arithmetic.PrimeTester;
 
-
 public class Arithmetic {
 
-
-    public static int sum(int ... ints){
+    public static int sum(int... ints){
         int sum = 0;
         for (int i : ints) {
             sum += i;
         }
-
         return sum;
     }
 
-    public static int product(int ... ints){
-        if (ints.length == 0) {
-            return 0;
-        }
-
-        int product = 1;
+    public static int product(int... ints){
+        int product = ints.length == 0 ? 0 : 1;
         for (int i : ints) {
             product *= i;
         }
-
         return product;
     }
 
-    public static boolean isDivisible(int number, int divisor){
-        return number % divisor == 0;
+    public static boolean isDivisible(int n, int d){
+        return n % d == 0;
     }
 
     public static boolean isEven(int n){
@@ -45,26 +37,23 @@ public class Arithmetic {
         return !PrimeTester.isPrime(n);
     }
 
-    public static void assertPositivity(int n, String alt){
-        if (n <= 0){
-            throw new IllegalArgumentException(alt);
-        }
-    }
-
     public static int sumOfTerms(int from, int to, int step){
         if (from == to) {
             return to;
+        } else if (to < from) {
+            throw new IllegalArgumentException("Illegal summation intervals: from "+from+" to "+to);
         }
-        assertPositivity(to - from, "Illegal summation interval: from "+from+" to "+to);
+
         int sum = 0;
         for (int i = from; i <= to; i += step) {
             sum += i;
         }
-
         return sum;
     }
 
-    //step-sizing is 1, by default
+    /**
+     * step-sizing is 1, by default.
+     */
     public static int sumOfTerms(int from, int to){
         return (from == 0 || from == 1) ? firstNTerms(to) : sumOfTerms(from, to, 1);
     }
@@ -79,17 +68,16 @@ public class Arithmetic {
 
     /**
      * The linear combination of 'n' with respect to 'd' as the divisor.
-     * This is based on the Euclid'd Division Theorem: n = d(q) + r
+     * This is based on Euclid's Division Theorem: n = d(q) + r
      */
     public static String linearCombinationOf(int n, int d){
         int q = n / d;
         int r = n - (d * q);
-
         return n+" = "+d+"("+q+") + "+r;
     }
 
     /**
-     * Finds the gcd using Euclid's Algorithm
+     * Finds the gcd using Euclid's Algorithm.
      */
     public static void launchEuclidAlgorithmForGCD(int a, int b) {
         int number = Math.max(a, b);
@@ -114,7 +102,6 @@ public class Arithmetic {
                 dMax = t;
             }
         }
-
         return dMax;
     }
 
@@ -125,7 +112,6 @@ public class Arithmetic {
                 dMin = t;
             }
         }
-
         return dMin;
     }
 

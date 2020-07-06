@@ -1,11 +1,11 @@
 package math.arithmetic;
 
+import run.MathPad;
 import ui.FontFactory;
 import ui.MPanel;
 import ui.MTextField;
-import ui.MathPad;
-import waks.Arithmetic;
-import waks.Constants;
+import utg.Arithmetic;
+import utg.Constants;
 
 import javax.swing.*;
 import java.awt.*;

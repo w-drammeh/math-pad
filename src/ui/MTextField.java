@@ -1,6 +1,6 @@
 package ui;
 
-import waks.Constants;
+import utg.Constants;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,7 +1,11 @@
 package math.algebra;
 
-import ui.*;
-import waks.Constants;
+import run.MathPad;
+import ui.FontFactory;
+import ui.MPanel;
+import ui.MTextField;
+import ui.MTextPane;
+import utg.Constants;
 
 import javax.swing.*;
 import java.awt.*;
