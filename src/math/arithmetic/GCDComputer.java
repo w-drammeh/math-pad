@@ -4,8 +4,8 @@ import run.MathPad;
 import ui.MPanel;
 import ui.MTextField;
 import ui.MTextPane;
-import utg.Arithmetic;
-import utg.Constants;
+import maha.Arithmetic;
+import maha.Constants;
 
 import javax.swing.*;
 import java.awt.*;

@@ -43,7 +43,7 @@ public class MathPad {
         final JScrollPane contentScroll = new JScrollPane(contentPanel);
         contentScroll.setPreferredSize(new Dimension(500, contentPanel.getPreferredSize().height));
 
-        mainFrame = new JFrame("MathPad - Mathematics Algorithm Implementor");
+        mainFrame = new JFrame("MathPad");
         attachMenuBar();
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setResizable(false);

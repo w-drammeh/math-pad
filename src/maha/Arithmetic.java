@@ -1,4 +1,4 @@
-package utg;
+package maha;
 
 import math.arithmetic.GCDComputer;
 import math.arithmetic.PrimeTester;

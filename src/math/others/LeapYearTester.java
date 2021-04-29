@@ -4,7 +4,7 @@ import run.MathPad;
 import ui.FontFactory;
 import ui.MPanel;
 import ui.MTextField;
-import utg.Constants;
+import maha.Constants;
 
 import javax.swing.*;
 import java.awt.*;
